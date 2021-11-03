@@ -1,0 +1,69 @@
+body {
+    background: #eaebec;
+    font-family: "Open Sans", sans-serif;
+    margin: 30px;
+    display: flex;
+}
+
+#planets {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+	height: auto;
+	background:#fff;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: content-box;
+    transition: .2s;
+}
+
+.card:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    transition: .2s;
+    transform: scale(1.03);
+}
+
+.textInfo {
+    margin: 0 20px;
+}
+
+.infoEl {
+    margin: 10px 0;
+}
+
+.textInfo h1 {
+    margin: 0 30px;
+}
+
+.img {
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+#button {
+    margin: 20px auto;
+    width: 200px;
+    padding: 10px;
+    border: 2px solid rgb(33, 166, 175);
+    border-radius: 10px;
+    color: rgb(33, 166, 175);
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 20px;
+    transition: .2s;
+} 
+
+#button:hover {
+    background-color: rgb(33, 166, 175);
+    color: white;
+    transition: .2s;
+    cursor: pointer;
+}
