@@ -1,3 +1,14 @@
+let users = document.createElement('div')
+users.setAttribute('id', 'users')
+document.body.prepend(users);
+
+let button = document.createElement('button')
+button.setAttribute('onclick', 'getUsers()')
+button.innerText = 'Get data';
+document.body.prepend(button);
+
+users.appendChild(button);
+
 async function getUsers() {
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
     const users = await response.json();
