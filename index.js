@@ -1,4 +1,17 @@
-let timer = document.getElementById("timer");
+let startButton = document.createElement('button')
+startButton.setAttribute('onclick', 'startTimer()');
+startButton.innerHTML = 'Start'
+document.body.prepend(startButton);
+
+let stopButton = document.createElement('button')
+stopButton.setAttribute('onclick', 'stopTimer()');
+stopButton.innerHTML = 'Stop'
+document.body.prepend(stopButton);
+
+let timer = document.createElement('h2')
+timer.setAttribute('id', 'timer');
+document.body.prepend(timer);
+
 
 function zero(n) {
     return (parseInt(n, 10) < 10 ? '0' : '') + n;
