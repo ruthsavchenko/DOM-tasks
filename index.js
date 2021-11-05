@@ -1,5 +1,11 @@
-const planets = document.getElementById('planets')
-const button = document.getElementById('button')
+let planets = document.createElement('div')
+planets.setAttribute('id', 'planets')
+document.body.prepend(planets);
+
+let button = document.createElement('button')
+button.setAttribute('id', 'button')
+button.innerText = 'Get data';
+document.body.prepend(button);
 
 button.addEventListener('click', e => {
     fetch('https://trevadim.github.io/vue/data/data.json')
